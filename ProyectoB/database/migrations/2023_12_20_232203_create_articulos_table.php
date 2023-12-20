@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('articulos', function (Blueprint $table) {
             $table->id();
-            $table->nombre();
-            $table->Precio();
+            $table->string('nombre');
+            $table->UnsignedBigInteger('precio');
             $table->timestamps();
         });
     }

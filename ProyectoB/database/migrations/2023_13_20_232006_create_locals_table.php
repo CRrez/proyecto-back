@@ -13,10 +13,15 @@ return new class extends Migration
     {
         Schema::create('local', function (Blueprint $table) {
             $table->id();
-            $table->Nombre();
-            $table->Ubicacion();
-            $table->Articulo();
+            $table->string('Nombre');
+            $table->string('Direccion');
             $table->timestamps();
+            $table->UnsignedBigInteger('id_fabrica');
+
+            $table->foreign('articulo')->references('id')->on('articulos')->onDelete('cascade');
+            $table->foreign('id_fabrica')->references('id')->on('local')->onDelete('cascade');
+
+
         });
     }
 
