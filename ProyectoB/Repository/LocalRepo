@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Repositories;
+
+use Exception;
+use App\Models\Local;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
+use App\Services\LocalService;
+use App\Jobs\CargaLocalJob;
+
+Class LocalRepo
+{
+
+}
