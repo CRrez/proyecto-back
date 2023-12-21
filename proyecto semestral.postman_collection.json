@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "46e9cca9-9a5b-4ec4-abde-9f7ef27b8cc8",
+		"name": "proyecto semestral",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11693337"
+	},
+	"item": [
+		{
+			"name": "registro articulo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articulo/registrarArticulo?nombre=pasta dental Cholgate&Precio=3000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articulo",
+						"registrarArticulo"
+					],
+					"query": [
+						{
+							"key": "nombre",
+							"value": "pasta dental Cholgate"
+						},
+						{
+							"key": "Precio",
+							"value": "3000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualiza Articulo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articulo/actualizaArticulo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articulo",
+						"actualizaArticulo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Articulo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articulo/listaArticulo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articulo",
+						"listaArticulo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Articulo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/articulo/EliminarArticulo",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"articulo",
+						"EliminarArticulo"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
