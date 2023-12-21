@@ -19,8 +19,8 @@ return new class extends Migration
             $table->timestamps();
            
 
-            $table->foreign('articulo')->references('id')->on('articulos')->onDelete('cascade');
-            $table->foreign('id_fabrica')->references('id')->on('local')->onDelete('cascade');
+          
+
 
 
         });

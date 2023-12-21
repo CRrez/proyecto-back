@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Repositories\ArticuloRepo;
+use App\Repository\ArticuloRepo;
 use App\Requests\Articulo;
 
 class ArticuloCOntroller extends Controller

@@ -6,6 +6,7 @@ use Exception;
 use App\Models\Articulo;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Log;
+use app\Http\Controllers\ArticuloCOntroller;
 
 //use Your Model
 
